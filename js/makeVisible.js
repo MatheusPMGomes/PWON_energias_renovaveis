@@ -14,8 +14,8 @@ const img_focus_depois = document.querySelector('.img_focus_depois');
 
 document.addEventListener('scroll', function () {
     const messageText = isInViewport(img_focus_antes) ?
-        makeVisible() :
-        passive;
+        makeVisible():
+        false;
 })
 
 function makeVisible() {
