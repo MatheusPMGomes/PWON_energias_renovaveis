@@ -51,7 +51,6 @@ ScrollReveal().reveal('.card_esq', {
 ScrollReveal().reveal('.card_vantagem_container', {
     duration: 1000,
     easing: 'ease-in',
-    reset: true,
     rotate: {
         x: 2000,
         z: 200
