@@ -120,6 +120,7 @@ body {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
+
 .hero-title {
   word-spacing: 5px;
   text-transform: uppercase;
@@ -133,6 +134,7 @@ body {
   left: 50%;
   transform: translate(-50%, -80%);
   color: #f8f8f8;
+  animation: fadeIn 3s;
 }
 
 .hero-title b {
@@ -152,6 +154,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 10px;
+  animation: fadeIn 3s;
 }
 
 .whatsapp-button {
@@ -186,6 +189,7 @@ body {
   width: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation: fadeIn 3s;
 }
 
 .instagram-button {
@@ -910,6 +914,11 @@ option {
   40% {
     transform: rotate(-15deg);
   }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 /* ......../ media query /.......... */
