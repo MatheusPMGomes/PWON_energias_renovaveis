@@ -49,29 +49,29 @@ ScrollReveal().reveal('.card_esq', {
 });
 
 ScrollReveal().reveal('.card_vantagem_container', {
-    duration: 1000,
+    duration: 2000,
     easing: 'ease-in',
     rotate: {
-        x: 2000,
-        z: 200
+        x: -1000,
+        z: 0
     }
 });
 
 
 ScrollReveal().reveal('.img_focus_antes', {
-    duration: 1000,
+    duration: 2000,
     easing: 'ease-in',
     rotate: {
         x: -1000,
-        z: 20
+        z: 0
     }
 });
 
 ScrollReveal().reveal('.img_focus_depois', {
-    duration: 1000,
+    duration: 2000,
     easing: 'ease-in',
     rotate: {
         x: -1000,
-        z: 20
+        z: 0
     }
 });
