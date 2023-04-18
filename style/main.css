@@ -8,29 +8,36 @@
   margin: 0;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: white;
-  opacity: 1; /* Firefox */
+  opacity: 1;
+  /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: white;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: white;
 }
 
 .html {
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
-  position: relative;
+  
+}
+
+html{
   overflow-x: hidden;
 }
+
 
 /* ///////////..utility classes../////////// */
 
@@ -149,7 +156,7 @@ body {
   width: 50%;
   top: 80%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin-bottom: 10px;
 }
 
@@ -184,7 +191,7 @@ body {
   top: 80%;
   width: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .instagram-button {
@@ -202,7 +209,7 @@ body {
 }
 
 .instagram-button:hover {
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .instagram-img-png {
@@ -532,7 +539,7 @@ body {
 /* ......../ fotos /.......... */
 
 .container_projetos {
-  padding: 0 30px 50px ;
+  padding: 0 30px 50px;
   margin-top: 50px;
   max-width: 100%;
   margin-inline: auto;
@@ -621,7 +628,7 @@ body {
   position: relative;
 }
 
-.main-video{
+.main-video {
   margin: 30px auto 0px;
   text-align: center;
   width: 80%;
@@ -631,30 +638,30 @@ body {
 }
 
 
-.main-video iframe{
+.main-video iframe {
   width: 70vw;
   height: 500px;
   border-radius: 20px;
-  box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.75);
 }
 
-#main-video img{
+#main-video img {
   width: 70vw;
   height: 500px;
   border-radius: 20px;
-  box-shadow: 0px 0px 21px 5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.75);
 }
 
 .video-container .video-list-container {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin: 0 30px 30px;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   order: 2;
 }
 
-.video-listed{
+.video-listed {
   position: relative;
   margin: auto;
   width: 100%;
@@ -662,58 +669,58 @@ body {
   cursor: pointer;
 }
 
-.video-listed:hover{
+.video-listed:hover {
   transform: scale(1.1);
 }
 
-.video-listed img{
+.video-listed img {
   border-radius: 20px;
 }
 
 .main-video i,
-.video-list-container i{
+.video-list-container i {
   pointer-events: none;
   font-size: 7vw;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   color: #fff;
   opacity: .8;
-  text-shadow: 1px 1px 3px rgb(0, 0, 0); 
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
-.main-video .hidden_button{
+.main-video .hidden_button {
   z-index: -300;
 }
 
-.main-video i{
+.main-video i {
   font-size: 15vw;
 }
 
 /* ......../ FORMULARIO /.......... */
-.container_form{
+.container_form {
   margin: 30px 0 0;
   width: 100%;
   position: relative;
 }
 
-.background_form{
+.background_form {
   width: 100%;
   opacity: 0.5;
 }
 
-.formulario{
+.formulario {
   width: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin-top: 3.5vw;
   padding: 2vw 0;
 }
 
-.input_form{
+.input_form {
   width: 100%;
   height: 4.5vw;
   border-radius: 30px;
@@ -723,26 +730,26 @@ body {
   border: .1px solid #000000c9;
 }
 
-.input_form:focus { 
+.input_form:focus {
   outline: none !important;
   border-color: #b60404;
   box-shadow: 0 0 10px #f30d05;
 }
 
-.send_form{
+.send_form {
   width: 50%;
   height: 5vw;
   border-radius: 30px;
   position: relative;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   font-size: 2vw;
   cursor: pointer;
   box-shadow: none;
 }
 
 .send_form,
-.input_form{
+.input_form {
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -752,28 +759,28 @@ body {
   color: white;
 }
 
-.send_form:hover{
+.send_form:hover {
   background: linear-gradient(to top, #f00000, #dc281e);
 }
 
-option{
+option {
   color: black;
 }
 
-.container_form p{
+.container_form p {
   width: 90%;
   position: absolute;
   font-size: 3vw;
   top: 0%;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   color: white;
   text-shadow: 3px 2px 4px rgb(0, 0, 0);
   text-align: center;
   padding: 2vw;
 }
 
-.container_form b{
+.container_form b {
   color: rgba(25, 221, 35, 0.726);
 }
 
@@ -1125,30 +1132,30 @@ option{
     flex-basis: 100%;
   }
 
-  .main-video{
+  .main-video {
     height: 250px;
-  }
-  
-  
-  .main-video iframe{
-    width: 70vw;
-    height: 250px;
-  }
-  
-  #main-video img{
-    width: 70vw;
-    height: 250px;
-  }
-  
-  .video-container .video-list-container {
-    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr));
   }
 
-  .container_form{
+
+  .main-video iframe {
+    width: 70vw;
+    height: 250px;
+  }
+
+  #main-video img {
+    width: 70vw;
+    height: 250px;
+  }
+
+  .video-container .video-list-container {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .container_form {
     height: 800px;
   }
 
-  .container_form::before {    
+  .container_form::before {
     content: "";
     background-image: url('/imagens/background_form.webp');
     background-size: cover;
@@ -1159,31 +1166,31 @@ option{
     bottom: 0px;
     left: 0px;
     opacity: 0.5;
-}
-  
-  .background_form{
+  }
+
+  .background_form {
     display: none;
   }
 
-  .formulario{
+  .formulario {
     width: 90%;
     padding: 0px;
     margin-top: 30px;
   }
 
-  .input_form{
+  .input_form {
     height: 50px;
     margin: 5px;
     font-size: 1rem;
   }
-  
-  .send_form{
+
+  .send_form {
     height: 50px;
     margin-top: 20px;
     font-size: 1rem;
   }
 
-  .container_form p{
+  .container_form p {
     font-size: 2rem;
     margin-top: 1rem;
   }
@@ -1277,20 +1284,20 @@ option{
     font-size: 15px;
   }
 
-  .formulario{
+  .formulario {
     margin-top: 40px;
   }
 
-  .input_form{
+  .input_form {
     margin: 5px;
     font-size: 1.5rem;
   }
-  
-  .send_form{
+
+  .send_form {
     font: 1.5rem;
   }
 
-  .container_form p{
+  .container_form p {
     width: 100%;
     font-size: 2.5rem;
     margin-top: 20px;
