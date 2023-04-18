@@ -8,6 +8,19 @@
   margin: 0;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
 .html {
   font-size: 62.5%;
 }
@@ -332,13 +345,14 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding-top: 40px;
+  text-decoration: underline;
 }
 
 .card_como_funciona_text {
   margin: auto;
   text-align: center;
+  font-weight: bold;
   width: 80%;
-  ;
   padding-top: 20px;
 }
 
@@ -482,7 +496,6 @@ body {
   width: 50%;
   position: absolute;
   z-index: 1;
-  opacity: 0;
 }
 
 .img_focus_antes {
@@ -490,10 +503,6 @@ body {
   top: -5;
 }
 
-.visivel{
-  transition: linear 0.5s;
-  opacity: 1;
-}
 
 .img_focus_depois {
   right: 0;
@@ -724,16 +733,27 @@ body {
   left: 50%;
   transform: translate(-50%,0);
   font-size: 2vw;
-  background: linear-gradient(to top, #f85032, #e73827);
-  color: white;
   cursor: pointer;
   box-shadow: none;
-  transition: linear .5s;
+}
+
+.send_form,
+.input_form{
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-shadow: #000000 2px 2px 1px;
+  color: white;
 }
 
 .send_form:hover{
   background: linear-gradient(to top, #f00000, #dc281e);
-  box-shadow: 0px 0px 23px 7px rgba(247, 2, 2, 0.75);
+}
+
+option{
+  color: black;
 }
 
 .container_form p{
@@ -1016,7 +1036,6 @@ body {
   }
 
   .card_como_funciona p {
-    font-weight: bold;
     font-size: 15px;
   }
 
