@@ -37,14 +37,14 @@ ScrollReveal().reveal('.div-about-text', {
 ScrollReveal().reveal('.card_dir', {
     duration: 1500,
     origin: 'dir',
-    distance: '80%',
+    distance: '25%',
     easing: 'ease-in',
 });
 
 ScrollReveal().reveal('.card_esq', {
     duration: 1500,
     origin: 'left',
-    distance: '80%',
+    distance: '25%',
     easing: 'ease-in',
 });
 
