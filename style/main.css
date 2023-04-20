@@ -138,6 +138,7 @@ body {
   left: 50%;
   transform: translate(-50%, -80%);
   color: #f8f8f8;
+  opacity: 0;
 }
 
 .hero-title b {
@@ -157,6 +158,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 10px;
+  opacity: 0;
 }
 
 .whatsapp-button {
@@ -191,6 +193,7 @@ body {
   width: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 0;
 }
 
 .instagram-button {
@@ -521,16 +524,6 @@ body {
 
 .solicite_ja_title {
   font-size: 50px;
-}
-
-.img_conta_antes,
-.img_focus_antes {
-  animation: fadein2 15s infinite
-}
-
-.img_conta_depois,
-.img_focus_depois {
-  animation: fadein 15s infinite
 }
 
 
@@ -917,10 +910,11 @@ option {
   }
 }
 
-@keyframes fadeIn {
+@keyframes fadein {
   0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 
 /* ......../ media query /.......... */
 

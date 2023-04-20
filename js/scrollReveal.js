@@ -1,3 +1,7 @@
+$(".hero-title").delay(1000).animate({ opacity: 1 }, 1500);
+$(".div-whatsapp-button").delay(1000).animate({ opacity: 1 }, 1500);
+$(".div-instagram-button").delay(1000).animate({ opacity: 1 }, 1500);
+
 ScrollReveal({
     reset: false,
     distance: '60px',
