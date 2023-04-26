@@ -117,11 +117,11 @@ body {
   height: 100%;
   left: 0;
   opacity: 0.95;
-  filter: blur(1px);
   border-bottom-left-radius: 50% 10%;
   border-bottom-right-radius: 50% 10%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   z-index: -1;
+  filter: brightness(0.8)
 }
 
 
@@ -148,6 +148,7 @@ body {
 
 .hero-title b+b {
   color: #fdf90ad8;
+  text-shadow: #FC0 1px 0 10px;
 }
 
 
@@ -159,13 +160,14 @@ body {
   transform: translate(-50%, -50%);
   margin-bottom: 10px;
   opacity: 0;
+  font-size: clamp(1em, 15px, 3em);
 }
 
 .whatsapp-button {
   color: white;
   text-align: right;
   text-transform: uppercase;
-  background: #1ce4025d;
+  background: #000000be;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   padding: 15px;
   width: 150px;
@@ -194,13 +196,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
+  font-size: clamp(1em, 15px, 3em);
 }
 
 .instagram-button {
   color: white;
   text-align: right;
   text-transform: uppercase;
-  background: #8513855d;
+  background: #000000be;
   text-shadow: 1px 1px 2px rgb(0, 0, 0);
   padding: 15px;
   width: 150px;
@@ -367,6 +370,7 @@ body {
   font-weight: bold;
   width: 80%;
   padding-top: 20px;
+  font-size: clamp(1em, 15px, 3em);
 }
 
 .card_1,
@@ -451,14 +455,12 @@ body {
 }
 
 .card_vantagem_container p {
-  width: 90%;
   font-size: 1.5vw;
-  margin: auto;
-  display: block;
   position: relative;
   top: 25%;
-  justify-content: center;
   text-align: center;
+  word-break: break-word;
+  padding: 20px;
 }
 
 .card_vantagem_blue {
@@ -1240,9 +1242,9 @@ option {
 }
 
 @media (max-width: 500px) {
-  html {
+  /* html {
     font-size: 65%;
-  }
+  } */
 
   .navbar .menu-items li {
     font-size: 1.6rem;
