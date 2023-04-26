@@ -684,6 +684,7 @@ body {
 
 .main-video .hidden_button {
   z-index: -300;
+  opacity: 0.0;
 }
 
 .main-video i {

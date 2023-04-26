@@ -1,6 +1,8 @@
 const mainVideo = document.getElementById("main-video")
 const playButton = document.getElementById("playButton_main_video")
 
+playButton.classList.add("hidden_button")
+
 playButton.addEventListener('click', () => {
     playButton.classList.add("hidden_button")
 });
@@ -11,14 +13,31 @@ mainVideo.addEventListener('click', () => {
 });
 
 
-$('#main-video').on('click', function () {
-    $(this).html('<iframe width="727" height="409" src="https://www.youtube.com/embed/O2NIPNC2CQQ" title="Instalação Usina Sairé (PE)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>').css('background', 'none');
+// $('#main-video').on('keypress', function () {
+//     $(this).html('<iframe width="727" height="409" src="https://www.youtube.com/embed/O2NIPNC2CQQ" title="Instalação Usina Sairé (PE)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>').css('background', 'none');
+// });
+// function getYoutubeID(url) {
+//     var id = url.match("[\\?&]v=([^&#]*)");
+//     id = id[1];
+//     return id;
+// };
+
+$(document).ready(function() {
+    var videoUrl = 'https://www.youtube.com/watch?v=O2NIPNC2CQQ';
+    var videoId = getYoutubeID(videoUrl);
+    var videoHtml = '<iframe width="727" height="409" src="https://www.youtube.com/embed/' + videoId + '" title="Instalação Usina Sairé (PE)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+    $('#main-video').html(videoHtml).css('background', 'none');
 });
+
 function getYoutubeID(url) {
     var id = url.match("[\\?&]v=([^&#]*)");
-    id = id[1];
+    if (id && id.length > 1) {
+        id = id[1];
+    } else {
+        id = '';
+    }
     return id;
-};
+}
 $('a.youtube').each(function () {
     var id = getYoutubeID(this.href);
     this.id = id;
