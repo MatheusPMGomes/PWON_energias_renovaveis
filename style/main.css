@@ -1294,4 +1294,9 @@ option {
   .formulario {
     margin-top: 40px;
   }
+
+  .container_form p {
+    font-size: clamp(1.0em, 27px, 3em); 
+  }
+
 }
