@@ -702,7 +702,8 @@ body {
 
 .background_form {
   width: 100%;
-  opacity: 0.5;
+  opacity: 0.7;
+  filter: brightness(0.7);
 }
 
 .formulario {
@@ -721,7 +722,7 @@ body {
   border-radius: 30px;
   margin: 1vw 0;
   padding: 0 30px;
-  font-size: 2vw;
+  font-size: clamp(1.0em, 15px, 3em);
   border: .1px solid #000000c9;
 }
 
@@ -738,7 +739,7 @@ body {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  font-size: 2vw;
+  font-size: clamp(1.0em, 15px, 3em);
   cursor: pointer;
   box-shadow: none;
 }
@@ -765,14 +766,14 @@ option {
 .container_form p {
   width: 90%;
   position: absolute;
-  font-size: 3vw;
+  font-size: clamp(1.0em, 30px, 3em);
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0);
   color: white;
   text-shadow: 3px 2px 4px rgb(0, 0, 0);
   text-align: center;
-  padding: 2vw;
+  padding-top: 2vw;
 }
 
 .container_form b {
@@ -920,6 +921,12 @@ option {
 
 
 /* ......../ media query /.......... */
+
+@media (max-width: 890px){
+  .container_form p {
+    font-size: clamp(1.0em, 25px, 3em); 
+  }
+}
 
 @media (max-width: 770px) {
   .navbar {
@@ -1156,6 +1163,10 @@ option {
     height: 800px;
   }
 
+  .container_form p {
+    font-size: clamp(1.0em, 30px, 3em); 
+  }
+
   .container_form::before {
     content: "";
     background-image: url('/imagens/background_form.webp');
@@ -1166,7 +1177,8 @@ option {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.5;
+    opacity: 0.7;
+    filter: brightness(0.7);
   }
 
   .background_form {
@@ -1182,18 +1194,12 @@ option {
   .input_form {
     height: 50px;
     margin: 5px;
-    font-size: 1rem;
   }
 
   .send_form {
     height: 50px;
     margin-top: 20px;
-    font-size: 1rem;
-  }
-
-  .container_form p {
-    font-size: 2rem;
-    margin-top: 1rem;
+    /* font-size: 1rem; */
   }
 
   .footer_container_superior {
@@ -1288,20 +1294,4 @@ option {
   .formulario {
     margin-top: 40px;
   }
-
-  .input_form {
-    margin: 5px;
-    font-size: 1.5rem;
-  }
-
-  .send_form {
-    font-size: 1.5rem;
-  }
-
-  .container_form p {
-    width: 100%;
-    font-size: 2.5rem;
-    margin-top: 20px;
-  }
-
 }
