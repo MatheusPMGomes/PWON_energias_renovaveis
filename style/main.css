@@ -78,7 +78,7 @@ body {
   list-style: none;
   margin-left: 2.5rem;
   margin-bottom: 0.5rem;
-  font-size: 1.0rem;
+  font-size: 1rem;
 }
 
 .menu-items a {
@@ -111,7 +111,7 @@ body {
   height: 80%;
 }
 
-.hero-background{
+.hero-background {
   width: 100%;
   position: relative;
   height: 100%;
@@ -120,9 +120,8 @@ body {
   border-bottom-right-radius: 50% 10%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   z-index: -1;
-  filter: brightness(0.8)
+  filter: brightness(0.8);
 }
-
 
 .hero-title {
   word-spacing: 5px;
@@ -131,7 +130,7 @@ body {
   max-height: 80%;
   position: relative;
   text-shadow: 2px 5px 10px #000000;
-  font-size: 2rem;
+  font-size: 3vh;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #f8f8f8;
@@ -142,23 +141,28 @@ body {
 
 .hero-title b {
   color: rgba(25, 221, 35, 0.726);
-  font-size: 5rem;
+  font-size: 2.8em;
 }
 
-.hero-title b+b {
+.hero-title b ~ b {
   color: #fdf90ad8;
-  text-shadow: #FC0 1px 0 10px;
+  text-shadow: #fc0 1px 0 10px;
 }
 
+.socialMedia-buttons {
+  position: relative;
+  top: -75%;
+  transform: translate(-0%, -10%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1rem;
+}
 
 .div-whatsapp-button {
-  position: relative;
-  max-width: inherit;
-  max-height: inherit;
   opacity: 0;
-  font-size: clamp(1em, 15px, 3em);
-  top: -77%;
-  margin-bottom: 1em;
+  font-size: 1rem;
 }
 
 .whatsapp-button {
@@ -176,7 +180,12 @@ body {
 }
 
 .whatsapp-button:hover {
-  background: linear-gradient(45deg, hsla(130, 79%, 48%, 1) 0%, hsla(157, 56%, 44%, 1) 50%, hsla(165, 90%, 50%, 1) 100%);
+  background: linear-gradient(
+    45deg,
+    hsla(130, 79%, 48%, 1) 0%,
+    hsla(157, 56%, 44%, 1) 50%,
+    hsla(165, 90%, 50%, 1) 100%
+  );
 }
 
 .whatsapp-img-png {
@@ -188,13 +197,8 @@ body {
 }
 
 .div-instagram-button {
-  position: relative;
-  max-width: inherit;
-  max-height: inherit;
   opacity: 0;
-  font-size: clamp(1em, 15px, 3em);
-  top: -77%;
-  font-size: clamp(1em, 15px, 3em);
+  font-size: 1rem;
 }
 
 .instagram-button {
@@ -212,7 +216,14 @@ body {
 }
 
 .instagram-button:hover {
-  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
 }
 
 .instagram-img-png {
@@ -267,7 +278,6 @@ body {
   padding: 5px;
 }
 
-
 /* ............/quem somos/............ */
 .about {
   padding: 0 30px;
@@ -306,7 +316,6 @@ body {
   padding-left: 10px;
 }
 
-
 /* ............/como funciona/............ */
 .como_funciona {
   width: 100%;
@@ -333,7 +342,6 @@ body {
   border-radius: 50px;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
-
 
 .card_dir {
   position: relative;
@@ -516,7 +524,6 @@ body {
   top: -5;
 }
 
-
 .img_focus_depois {
   right: 0;
   top: -10;
@@ -525,7 +532,6 @@ body {
 .solicite_ja_title {
   font-size: 50px;
 }
-
 
 /* ......../ Projetos /.......... */
 /* ......../ fotos /.......... */
@@ -629,7 +635,6 @@ body {
   cursor: pointer;
 }
 
-
 .main-video iframe {
   width: 70vw;
   height: 500px;
@@ -678,13 +683,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
   text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 
 .main-video .hidden_button {
   z-index: -300;
-  opacity: 0.0;
+  opacity: 0;
 }
 
 .main-video i {
@@ -720,8 +725,8 @@ body {
   border-radius: 30px;
   margin: 1vw 0;
   padding: 0 30px;
-  font-size: clamp(1.0em, 15px, 3em);
-  border: .1px solid #000000c9;
+  font-size: clamp(1em, 15px, 3em);
+  border: 0.1px solid #000000c9;
 }
 
 .input_form:focus {
@@ -737,7 +742,7 @@ body {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  font-size: clamp(1.0em, 15px, 3em);
+  font-size: clamp(1em, 15px, 3em);
   cursor: pointer;
   box-shadow: none;
 }
@@ -764,7 +769,7 @@ option {
 .container_form p {
   width: 90%;
   position: absolute;
-  font-size: clamp(1.0em, 30px, 3em);
+  font-size: clamp(1em, 30px, 3em);
   top: 0%;
   left: 50%;
   transform: translate(-50%, 0);
@@ -875,12 +880,14 @@ option {
 }
 
 .icon--instagram:hover {
-  background-image: radial-gradient(circle at 30% 107%,
-      #fdf497 0%,
-      #fdf497 5%,
-      #fd5949 45%,
-      #d6249f 60%,
-      #285aeb 90%);
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   outline-color: #a02d76;
 }
 
@@ -913,16 +920,19 @@ option {
 }
 
 @keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 
 /* ......../ media query /.......... */
 
-@media (max-width: 890px){
+@media (max-width: 890px) {
   .container_form p {
-    font-size: clamp(1.0em, 25px, 3em); 
+    font-size: clamp(1em, 25px, 3em);
   }
 }
 
@@ -1020,19 +1030,19 @@ option {
     right: 0%;
   }
 
-  .navbar-container input[type="checkbox"]:checked~.menu-items {
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(35deg);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
 
-  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
 
@@ -1122,7 +1132,6 @@ option {
     position: relative;
     top: 1;
     width: 100%;
-
   }
 
   .conta_antes_depois {
@@ -1141,7 +1150,6 @@ option {
   .main-video {
     height: 250px;
   }
-
 
   .main-video iframe {
     width: 70vw;
@@ -1162,12 +1170,12 @@ option {
   }
 
   .container_form p {
-    font-size: clamp(1.0em, 30px, 3em); 
+    font-size: clamp(1em, 30px, 3em);
   }
 
   .container_form::before {
     content: "";
-    background-image: url('/imagens/background_form.webp');
+    background-image: url("/imagens/background_form.webp");
     background-size: cover;
     background-position: 50%;
     position: absolute;
@@ -1209,7 +1217,7 @@ option {
     height: 30vw;
     display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
   }
 
   .footer_address h6 {
@@ -1242,7 +1250,6 @@ option {
     transition-duration: 0.25s;
     margin: 0 20px;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -1268,11 +1275,11 @@ option {
   }
 
   .hero-title {
-    font-size: 25px;
+    font-size: 3vh;
   }
 
   .hero-title b {
-    font-size: 45px;
+    font-size: 7vh;
   }
 
   .titles {
@@ -1284,7 +1291,6 @@ option {
     font-size: 20px;
   }
 
-
   .about-list {
     font-size: 15px;
   }
@@ -1294,7 +1300,6 @@ option {
   }
 
   .container_form p {
-    font-size: clamp(1.0em, 27px, 3em); 
+    font-size: clamp(1em, 27px, 3em);
   }
-
 }
