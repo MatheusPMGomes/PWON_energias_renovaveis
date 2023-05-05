@@ -130,7 +130,7 @@ body {
   max-height: 80%;
   position: relative;
   text-shadow: 2px 5px 10px #000000;
-  font-size: 3vh;
+  font-size: 5vh;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   color: #f8f8f8;
@@ -141,7 +141,7 @@ body {
 
 .hero-title b {
   color: rgba(25, 221, 35, 0.726);
-  font-size: 2.8em;
+  font-size: 10vh;
 }
 
 .hero-title b ~ b {
@@ -154,18 +154,25 @@ body {
   top: -75%;
   transform: translate(-0%, -10%);
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   justify-content: center;
-  gap: 1em;
   margin-top: 1rem;
+}
+
+.socialMedia-buttons a {
+  text-decoration: none;
+  cursor: pointer;
+  width: 150px;
+  margin: auto;
+  border-radius: 50px;
 }
 
 .div-whatsapp-button {
   opacity: 0;
   font-size: 1rem;
-}
-
-.whatsapp-button {
+  display: flex;
+  gap: 0.5rem;
+  margin: auto;
   color: white;
   text-align: right;
   text-transform: uppercase;
@@ -179,7 +186,14 @@ body {
   transition: 1s;
 }
 
-.whatsapp-button:hover {
+.whatsapp-button {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.div-whatsapp-button:hover {
   background: linear-gradient(
     45deg,
     hsla(130, 79%, 48%, 1) 0%,
@@ -189,19 +203,16 @@ body {
 }
 
 .whatsapp-img-png {
-  position: absolute;
+  position: relative;
   height: 30px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-210%, -50%);
 }
 
 .div-instagram-button {
   opacity: 0;
   font-size: 1rem;
-}
-
-.instagram-button {
+  display: flex;
+  gap: 0.5rem;
+  margin: auto;
   color: white;
   text-align: right;
   text-transform: uppercase;
@@ -215,7 +226,14 @@ body {
   transition: 1s;
 }
 
-.instagram-button:hover {
+.instagram-button {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.div-instagram-button:hover {
   background: linear-gradient(
     45deg,
     #f09433 0%,
@@ -227,11 +245,8 @@ body {
 }
 
 .instagram-img-png {
-  position: absolute;
-  height: 50px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-150%, -50%);
+  position: relative;
+  height: 30px;
 }
 
 /* ............/titles/............ */
@@ -1280,6 +1295,11 @@ option {
 
   .hero-title b {
     font-size: 7vh;
+  }
+
+  .socialMedia-buttons {
+    flex-direction: column;
+    gap: 1rem;
   }
 
   .titles {

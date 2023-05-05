@@ -10,8 +10,16 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal(".hero-title", { delay: 500, origin: "top" });
-ScrollReveal().reveal(".div-whatsapp-button", { delay: 500, origin: "right" });
-ScrollReveal().reveal(".div-instagram-button", { delay: 500, origin: "left" });
+ScrollReveal().reveal(".div-whatsapp-button-link", {
+  delay: 500,
+  origin: "right",
+  distance: "200px",
+});
+ScrollReveal().reveal(".div-instagram-button-link", {
+  delay: 500,
+  origin: "left",
+  distance: "200px",
+});
 ScrollReveal().reveal(".titles", { origin: "top" });
 ScrollReveal().reveal(".div-about-text");
 ScrollReveal().reveal(".card_dir", { origin: "right" });
