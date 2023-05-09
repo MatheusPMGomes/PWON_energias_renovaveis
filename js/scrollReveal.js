@@ -6,7 +6,7 @@ ScrollReveal({
   reset: false,
   distance: "60px",
   duration: 2500,
-  delay: 400,
+  delay: 0,
 });
 
 ScrollReveal().reveal(".hero-title", { delay: 500, origin: "top" });
