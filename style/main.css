@@ -360,7 +360,8 @@ body {
 
 .span_icon_card {
   position: absolute;
-  left: 43%;
+  left: 50%;
+  transform: translate(-50%, -0%);
 }
 
 .card_como_funciona_icon {
@@ -720,6 +721,8 @@ body {
   width: 100%;
   opacity: 0.7;
   filter: brightness(0.7);
+  border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
 }
 
 .formulario {
@@ -1191,6 +1194,8 @@ option {
     left: 0px;
     opacity: 0.7;
     filter: brightness(0.7);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
   }
 
   .background_form {
