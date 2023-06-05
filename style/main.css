@@ -461,9 +461,9 @@ body {
   text-align: center;
   color: white;
   text-shadow: #000000 1px 1px 1px;
-  font-size: 2vw;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  padding-top: 15px;
+  padding: 15px 5px 0;
 }
 
 .card_vantagem_container_div_inferior {
@@ -471,15 +471,16 @@ body {
   height: 266;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .card_vantagem_container p {
-  font-size: 1.5vw;
-  position: relative;
-  top: 25%;
+  font-size: 1rem;
   text-align: center;
-  word-break: break-word;
-  padding: 20px;
+  padding: 0 2rem;
 }
 
 .card_vantagem_blue {
@@ -1108,14 +1109,6 @@ option {
   .vantagens {
     display: flex;
     flex-direction: column;
-  }
-
-  .card_vantagem_container p {
-    font-size: 15px;
-  }
-
-  .card_vantagem_container h4 {
-    font-size: 20px;
   }
 
   .conta_antes_depois {
