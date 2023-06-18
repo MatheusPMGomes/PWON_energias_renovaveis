@@ -11,15 +11,6 @@ mainVideo.addEventListener("click", () => {
   playButton.classList.add("hidden_button");
 });
 
-// $('#main-video').on('keypress', function () {
-//     $(this).html('<iframe width="727" height="409" src="https://www.youtube.com/embed/O2NIPNC2CQQ" title="Instalação Usina Sairé (PE)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>').css('background', 'none');
-// });
-// function getYoutubeID(url) {
-//     var id = url.match("[\\?&]v=([^&#]*)");
-//     id = id[1];
-//     return id;
-// };
-
 $(document).ready(function () {
   var videoUrl = "https://www.youtube.com/watch?v=O2NIPNC2CQQ";
   var videoId = getYoutubeID(videoUrl);

@@ -112,14 +112,14 @@ body {
 }
 
 .hero-background {
-  width: 100%;
-  position: relative;
+  background-image: url(/imagens/img_projeto_5.webp);
+  background-position: center;
+  background-size: cover;
   height: 100%;
   opacity: 0.95;
   border-bottom-left-radius: 50% 10%;
   border-bottom-right-radius: 50% 10%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  z-index: -1;
   filter: brightness(0.8);
 }
 
