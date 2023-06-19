@@ -410,9 +410,18 @@ body {
 
 .vantagens {
   margin: 50 30px;
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  /* display: grid;
   grid-gap: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.instagram-media {
+  max-width: 350px !important;
 }
 
 .card_vantagem_container {
@@ -508,9 +517,16 @@ body {
 }
 
 /* ......../ Faça seu orçamento /.......... */
+
+#facaSeuOrcamento {
+  background-color: #bebebe41;
+  border-radius: 2em;
+}
+
 .conta_antes_depois {
   margin: 50px 30px;
   display: grid;
+  padding-bottom: 2em;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 30px;
@@ -545,11 +561,6 @@ body {
 
 /* ......../ Projetos /.......... */
 /* ......../ fotos /.......... */
-
-#projetos {
-  background-color: #bebebe41;
-  border-radius: 2em;
-}
 
 .container_projetos {
   padding: 0 30px 50px;
@@ -1106,10 +1117,10 @@ option {
     width: 55vw;
   }
 
-  .vantagens {
+  /* .vantagens {
     display: flex;
     flex-direction: column;
-  }
+  } */
 
   .conta_antes_depois {
     margin: 150px 30px;
