@@ -1,6 +1,7 @@
 $(".hero-title").delay(1000).animate({ opacity: 1 }, 1500);
 $(".div-whatsapp-button").delay(1000).animate({ opacity: 1 }, 1500);
 $(".div-instagram-button").delay(1000).animate({ opacity: 1 }, 1500);
+$(".saibaMais-div").delay(1000).animate({ opacity: 0.5 }, 1500);
 
 ScrollReveal({
   reset: false,
@@ -34,3 +35,4 @@ ScrollReveal().reveal(".about-text-li-2", { origin: "left" });
 ScrollReveal().reveal(".about-text-li-3", { origin: "left" });
 ScrollReveal().reveal(".about-text-li-4", { origin: "left" });
 ScrollReveal().reveal(".about-img", { origin: "left" });
+ScrollReveal().reveal(".instagram-post", { rotate: { x: -1000, z: 0 } });
