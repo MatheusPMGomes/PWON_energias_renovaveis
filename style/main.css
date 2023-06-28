@@ -33,6 +33,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.html,
+body {
+  width: 100vw;
+}
+
 /* ///////////..utility classes../////////// */
 
 .container {
