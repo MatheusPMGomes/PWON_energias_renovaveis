@@ -1,4 +1,5 @@
 $(".hero-title").delay(1000).animate({ opacity: 1 }, 1500);
+$(".hero-background").delay(1000).animate({ opacity: 1 }, 1000);
 $(".div-whatsapp-button").delay(1000).animate({ opacity: 1 }, 1500);
 $(".div-instagram-button").delay(1000).animate({ opacity: 1 }, 1500);
 $(".saibaMais-div").delay(1000).animate({ opacity: 0.5 }, 1500);
