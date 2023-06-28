@@ -24,8 +24,7 @@ ScrollReveal().reveal(".div-instagram-button-link", {
 ScrollReveal().reveal(".titles", { origin: "top" });
 ScrollReveal().reveal(".div-about-text");
 ScrollReveal().reveal(".card_dir", { origin: "left" });
-// ScrollReveal().reveal(".card_dir", { origin: "right" });
-ScrollReveal().reveal(".card_esq", { origin: "left" });
+ScrollReveal().reveal(".card_esq", { origin: "right" });
 ScrollReveal().reveal(".card_vantagem_container", { rotate: { x: -1000, z: 0 } });
 ScrollReveal().reveal(".img_focus_antes", { rotate: { x: -1000, z: 0 } });
 ScrollReveal().reveal(".img_focus_depois", { rotate: { x: -1000, z: 0 } });
