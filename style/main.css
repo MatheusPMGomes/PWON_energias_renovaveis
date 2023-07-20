@@ -78,7 +78,8 @@ body {
   list-style: none;
   margin-left: 2.5rem;
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.4vw;
+  text-align: center;
 }
 
 .menu-items a {
@@ -149,6 +150,16 @@ body {
 .hero-title b ~ b {
   color: #fdf90ad8;
   text-shadow: #fc0 1px 0 10px;
+  /* animation: glow 1500ms infinite alternate; */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #141414, 0 0 20px #000000, 0 0 30px #000000;
+  }
+  to {
+    text-shadow: 0 0 5px #fbff02ab, 0 0 10px #eeff00, 0 0 15px #ffe600;
+  }
 }
 
 .socialMedia-buttons {
@@ -1035,14 +1046,19 @@ option {
     flex-direction: column;
     margin-left: -40px;
     padding-left: 50px;
+    position: relative;
+    top: 3.5rem;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
   }
 
   .navbar .menu-items li {
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 500;
+  }
+
+  .menu-items li {
+    text-align: left;
   }
 
   .logo {

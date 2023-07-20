@@ -28,7 +28,7 @@ submit.addEventListener("submit", (e) => {
     From: "orcamentos@pwon.com.br",
     Subject: "Orçamento do site PWON",
     Body: ebody,
-  }).then((message) => alert(message), apagarDadosFormulario());
+  }).then((message) => alert("Formulário Enviado"), apagarDadosFormulario());
 });
 
 function apagarDadosFormulario() {
