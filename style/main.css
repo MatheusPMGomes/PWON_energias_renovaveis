@@ -289,10 +289,11 @@ body {
   flex-direction: column;
   gap: 1em;
   padding: 1em;
+  flex: 70%;
 }
 
 .about-text span {
-  font-size: 2.5em;
+  font-size: 2.5vw;
   color: #000000a8;
   text-shadow: -0px 0px 7px rgba(28, 31, 0, 1);
   font-weight: bold;
@@ -302,12 +303,12 @@ body {
   width: 100%;
   height: 100%;
   list-style: none;
-  font-size: 1.2em;
+  font-size: 1.5vw;
 }
 
 .about-text li {
   margin: 1.5em 0;
-  padding: 0.5em;
+  padding: 0.8em;
 }
 
 .about-text li:nth-child(odd) {
@@ -324,6 +325,8 @@ body {
   flex-direction: column;
   gap: 1em;
   width: 100%;
+  flex: 30%;
+  padding: 1em;
 }
 
 .about-img img {
